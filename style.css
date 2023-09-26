@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+}
+button {
+  background-color: #1877f2;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 14px 32px;
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.first-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 40px;
+  background-color: #1877f2;
+  color: #fff;
+}
+
+.first-nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.first-nav ul li {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.first-nav ul li:hover {
+  color: #ff0019;
+  cursor: pointer;
+}
+
+.first-nav .second-list {
+  gap: 3rem;
+  font-size: 0.8rem;
+}
+
+.second-nav {
+  background: #fff;
+  transition: all 0.5s;
+  padding: 10px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.second-nav img {
+  width: 290px;
+  height: 78px;
+}
+.second-nav .second-nav-list > ul {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Container for the dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Button to toggle the dropdown */
+.dropbtn {
+  color: #000;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  color: #1877f2;
+  transition: all 0.2s;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  padding: 0.5rem;
+  width: 200px;
+}
+
+/* Show the dropdown content when hover on the container */
+.dropdown:hover .dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the dropdown items */
+.dropdown-content a {
+  width: 100%;
+  color: black;
+  padding: 0.7rem 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change the background color of dropdown items on hover */
+.dropdown-content a:hover {
+  color: #1877f2;
+  transition: all 0.2s;
+}
+
+/* for Login button */
+
+.drop-btn {
+  background-color: #1877f2;
+  color: white;
+  border-radius: 10px;
+  padding: 0.4rem 0.8rem;
+}
+
+.drop-btn:hover {
+  border: 1px solid #1877f2;
+  background-color: white;
+  color: #1877f2;
+}
+
+/* Header Done */
+
+/* carousel start */
+
+.carousel {
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+}
+.carousel img {
+  width: 100%;
+  height: 100%;
+}
+
+/* carousel end */
+
+/* marquee start */
+
+.marquee {
+  display: flex;
+  gap: 5px;
+  padding: 1rem 6rem;
+  background-color: rgb(243, 243, 243);
+  color: red;
+  font-size: 1rem;
+}
+.marquee marquee a {
+  padding-right: 4rem;
+  color: black;
+  font-size: 0.9rem;
+  transition: 0.3s all;
+}
+.marquee marquee a:hover {
+  color: #1877f2;
+  transition: 0.3s all;
+}
+
+/* marquee end */
+
+/* message section start */
+
+.message-section {
+  margin: 2rem 6rem;
+  display: flex;
+  gap: 1.5rem;
+  line-height: 1.6;
+}
+.ms p {
+  width: 100%;
+  font-size: 16px;
+  text-align: justify;
+}
+.ms h1 {
+  border-left: 0.35rem solid red;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+.ms button {
+  background-color: #1877f2;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 14px 32px;
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.ms button:hover {
+  background-color: #5498f0;
+  transition: 0.5s all;
+}
+.message-section .left-msg {
+  width: 50%;
+}
+.message-section .right-msg {
+  width: 50%;
+}
+.message-section .right-msg p > img {
+  width: 35%;
+  float: left;
+  height: auto;
+  padding: 0.25rem;
+  margin: 5px 15px;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+}
+/* message section end */
+
+/* Notice and Programs Start*/
+
+.notice-programs {
+  border: 1px solid gainsboro;
+  padding: 1.5rem 5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+.notice-programs .notice-programs-left {
+  width: 60%;
+  border: 1px solid #dee2e6;
+  padding: 2rem;
+  margin-left: 2rem;
+}
+
+.notice-programs .notice-programs-left > h1 {
+  border-left: 0.4rem solid red;
+  padding: 0 1rem;
+}
+
+.notice-programs .notice-programs-right {
+  width: 30%;
+  border: 1px solid #dee2e6;
+  padding: 2rem;
+  background-color: #f2f2f2;
+}
+.notice-programs-heading {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem 0;
+  margin-top: 0.5rem;
+}
+.notice-programs-heading > h2 {
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.notice-programs .notices {
+  padding: 1.2rem 0;
+  border-top: 1px solid #dee2e6;
+}
+
+.notice-programs .notices .top {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.notice-programs .notices .top i {
+  font-size: 0.6rem;
+}
+
+.notice-programs .notice-programs-right .active {
+  background-color: #00a651;
+  color: white;
+}
+
+.notice-programs .notice-programs-right > h1 {
+  border-left: 0.4rem solid red;
+  padding: 0 1rem;
+}
+
+.notice-programs .notice-programs-right > h3 {
+  background-color: white;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  color: #1919ff;
+}
+.notice-programs .notice-programs-right .desc {
+  background-color: white;
+  margin-top: 4rem;
+  padding: 1rem;
+  font-size: 15px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+.notice-programs .notice-programs-right .desc > h2 {
+  margin-bottom: 1rem;
+}
+
+.notice-programs .notices .bottom {
+  font-size: 0.9rem;
+}
+
+/* Notice and Programs end*/
